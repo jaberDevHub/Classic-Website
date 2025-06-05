@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Showcase - My 2000s Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Base font setting */
+        body {
+            font-family: 'Inter', sans-serif;
+           
+        }
+
+        /* Custom 2000s-inspired styles (consistent with main page) */
+        .text-shadow-2k {
+            text-shadow: 2px 2px #00000040;
+        }
+
+        .button-2k {
+            border: 2px solid #000;
+            box-shadow: 2px 2px 0px #00000080;
+            transition: all 0.1s ease-in-out;
+        }
+
+        .button-2k:active {
+            box-shadow: none;
+            transform: translate(2px, 2px);
+        }
+
+        .navbar-2k {
+            background: linear-gradient(to bottom, #0077CC, #0055AA);
+            border-bottom: 3px solid #003366;
+        }
+
+        .footer-2k { /* Re-added for completeness, though not explicitly requested for this page, good practice */
+            background-color: #333333;
+            border-top: 3px solid #555555;
+        }
+
+        .hr-2k {
+            border-top: 2px dashed #0055AA;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Styles for the Design Gallery */
+        
+
+        .design-gallery-item-title {
+            font-size: 15px; /* Smaller font for title */
+            color: #ffffff; /* Dark blue title text */
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        /* Custom text stroke style */
+        .text-stroke-custom {
+            -webkit-text-stroke-width: 5px; 
+            -webkit-text-stroke-color: black; /* Stroke color */
+            paint-order: stroke fill; 
+        }
+       
+    </style>
+</head>
+<body class="bg-blue-700 text-gray-800">
+
+    <!-- Header Section (Same as main page) -->
+    <header class="navbar-2k p-4 shadow-lg">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <a href="index.html" class="underline text-white text-2xl font-bold text-shadow-2k hover:text-yellow-300 transition-colors">
+                Jaber<span class="text-yellow-300">.</span>exe
+            </a>
+            <p class="text-gray-400 text-2xl underline hidden sm:block">Welcome to my Portfolio Web</p> <!-- Hide on very small screens to prevent overlap -->
+        </div>
+    </header>
+
+    <!-- Navigation Bar (Same as main page) -->
+    <nav>
+         <ul class="flex space-x-4 sm:space-x-6 mt-2 sm:mt-0 bg-yellow-500 justify-center p-2">
+                <li><a href="index.html#home" class="underline text-black hover:text-yellow-300 font-semibold transition-colors">Home</a></li>
+                <li><a href="index.html#portfolio" class=" underline text-black hover:text-yellow-300 font-semibold transition-colors">Portfolio</a></li>
+                <li><a href="index.html#contact" class="underline text-black hover:text-yellow-300 font-semibold transition-colors">Contact Me</a></li>
+            </ul>
+    </nav>
+
+    <!-- Design Showcase Section -->
+    <main class="container mx-auto px-4 py-12">
+        <h1 class="text-3xl sm:text-4xl font-bold text-center text-red-500  mb-10 text-shadow-2k  text-stroke-custom ">
+            My Awesome Designs!
+             <p class="text-xs text-white mt-1">(Feature coming soon... maybe in 2004!)</p>
+        </h1>
+        
+
+        <!-- Design Gallery Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  ">
+            <!-- Gallery Item 1 -->
+            <div class="design-gallery-item rounded-md">
+                <img src="Minimalist Travel Promo Design.jpg" >
+                <p class="design-gallery-item-title bg-red-800 text-stroke-custom">Travel Promo Flyer</p>
+            </div>
+            <!-- Gallery Item 2 -->
+            <div class="design-gallery-item rounded-md">
+                <img src="./assests/Green and Yellow Modern Golf Lesson Instagram Post.jpg" >
+                <p class="design-gallery-item-title bg-red-80 text-stroke-custom bg-red-800">Gold Advertisement FLyer</p>
+            </div>
+            <!-- Gallery Item 3 -->
+            <div class="design-gallery-item rounded-md">
+                <img src="./assests/House Flyer.png" >
+                <p class="design-gallery-item-title bg-red-800 text-stroke-custom">House Rent FLyer</p>
+            </div>
+            <!-- Gallery Item 4 -->
+            <div class="design-gallery-item rounded-md">
+                <img src="./assests/Blue Professional Insurance Service Flyer.png" >
+                <p class="design-gallery-item-title bg-red-800 text-stroke-custom">Insurance Flyer</p>
+            </div>
+            <!-- Gallery Item 5 -->
+            <div class="design-gallery-item rounded-md">
+                <img src="./assests/Concert Poster jaber ahmed jaber jaber vfx jaber design.png"> <p class="design-gallery-item-title bg-red-800 text-stroke-custom">Concert Poster</p>
+            </div>
+            <!-- Gallery Item 6 -->
+            <div class="design-gallery-item rounded-md">
+                <img src="./assests/Blue Professional Insurance Service Flyer.png" ><p class="design-gallery-item-title bg-red-800 text-stroke-custom">Construction Service Poster</p>
+            </div>
+            <!-- Add more gallery items as needed -->
+        </div>
+
+    </main>
+
+    <!-- Footer Section (Consistent with main page) -->
+    <footer class="footer-2k text-white py-8 text-center mt-12">
+        <div class="container mx-auto px-4">
+            <p class="mb-4 text-sm sm:text-base">&copy; 2001 My Awesome Web Presence. All Rights Reserved (probably).</p>
+            <div class="flex flex-wrap justify-center items-center space-x-2 sm:space-x-4">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-300 transition-colors text-sm sm:text-base">LINKED_IN</a>
+                <span class="text-gray-500 hidden sm:inline">|</span>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-300 transition-colors text-sm sm:text-base">GITHUB</a>
+                <span class="text-gray-500 hidden sm:inline">|</span>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-300 transition-colors text-sm sm:text-base">TWITTER_LOL</a>
+                 <span class="text-gray-500 hidden sm:inline">|</span>
+                <a href="https://example.com/myspace" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-300 transition-colors text-sm sm:text-base">MY_SPACE (Archive)</a>
+            </div>
+            <p class="mt-6 text-xs text-gray-400">
+                This site is optimized for Netscape Navigator 4.0+ and Internet Explorer 5.0+
+                <br>
+                <img src="https://web.archive.org/web/20090730081337if_/http://www.geocities.com/clipart/pbi/gifs/construcci%C3%B3n.gif" alt="Under Construction" class="inline-block h-6 mx-auto mt-2" onerror="this.style.display='none'">
+                <img src="https://web.archive.org/web/20030806032932im_/http://www.htmlgoodies.com/images/buttons/counter.gif" alt="Hit Counter" class="inline-block h-8 mx-auto mt-2" onerror="this.style.display='none'">
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
