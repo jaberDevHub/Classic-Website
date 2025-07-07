@@ -67,29 +67,30 @@
             50% { color: limegreen; } /* Classic terminal green color for the blink */
         }
 
+
+
         /* Removed .category-title-2k as it's no longer needed for this structure */
 
     </style>
 </head>
 <body class=" text-gray-800">
 
-    <header class="navbar-2k p-4 shadow-lg">
-        <div class="container mx-auto flex flex-wrap justify-between items-center">
-            <a href="#" class="underline text-white text-2xl font-bold text-shadow-2k hover:text-yellow-300 transition-colors">
-               Jaber<span class="text-yellow-300">.</span>exe
-            </a>
-            
-            <p class="text-gray-400 text-2xl underline">Welcome to my Portfolio Web</p>
-            
-
-        </div>
+    <header class="bg-gradient-to-b from-[#004080] to-[#002040] border-b-4 border-[#000080] shadow-lg p-4">
+      <div class="max-w-screen-xl mx-auto flex flex-wrap justify-between items-center">
+        <a href="index.html" class="underline text-white text-2xl font-bold drop-shadow-[2px_2px_0_black] hover:text-yellow-300 transition-colors">
+          Jaber<span class="text-yellow-300">.</span>exe
+        </a>
+        <p class="text-gray-300 text-2xl underline hidden sm:block">Welcome to my Portfolio Web</p>
+      </div>
     </header>
-    <nav>
-         <ul class="flex space-x-4 sm:space-x-6 mt-2 sm:mt-0 bg-yellow-500 justify-center p-2">
-                <li><a href="#home" class="underline text-black hover:text-yellow-300 font-semibold transition-colors">Home</a></li>
-                <li><a href="#portfolio" class=" underline text-black hover:text-yellow-300 font-semibold transition-colors">Portfolio</a></li>
-                <li><a href="#contact" class="underline text-black hover:text-yellow-300 font-semibold transition-colors">Contact Me</a></li>
-            </ul>
+
+    <!-- Navigation Bar -->
+    <nav class="mt-2 sm:mt-0">
+      <ul class="flex space-x-2 sm:space-x-4 justify-center p-2 bg-[#ffcc00] border-[3px] border-black shadow-[3px_3px_0_#666] font-bold font-mono uppercase tracking-wider">
+        <li><a href="#home" class="px-4 py-2 underline text-black hover:text-[#880000] transition-colors drop-shadow-[1px_1px_0_white]">Home</a></li>
+        <li><a href="#portfolio" class="px-4 py-2 underline text-black hover:text-[#880000] transition-colors drop-shadow-[1px_1px_0_white]">Portfolio</a></li>
+        <li><a href="#contact" class="px-4 py-2 underline text-black hover:text-[#880000] transition-colors drop-shadow-[1px_1px_0_white]">Contact Me</a></li>
+      </ul>
     </nav>
 
 
@@ -111,75 +112,75 @@
         <hr class="hr-2k my-8 md:my-12">
     </div>
 
-    <section id="portfolio" class="py-16 bg-gray-200">
-        <div class="container mx-auto px-4">
-            <h2 class="underline text-3xl sm:text-4xl font-bold text-center text-blue-700 mb-12 text-shadow-2k">My Kickin' Portfolio</h2>
+    <section id="portfolio" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="underline text-3xl sm:text-4xl font-mono font-bold text-center text-blue-700 mb-12" style="text-shadow: 1px 1px #ccc;">
+      My Kickin' Portfolio
+    </h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="card-2k rounded-lg shadow-xl p-6 transform hover:scale-105 transition-transform duration-300">
-                    <img src="https://placehold.co/600x400/FF69B4/FFFFFF?text=Awesome+Poster+Design&font=impact" alt="Awesome Poster Design" class="rounded-md mb-4 border-2 border-pink-500 w-full h-auto object-cover" onerror="this.src='https://placehold.co/600x400/cccccc/000000?text=Image+Not+Found'">
-                    <h4 class="text-2xl font-bold text-pink-600 mb-2">Graphic Design Showcase</h4>
-                    <p class="text-gray-700 mb-4 text-sm sm:text-base">Eye-catching poster and flyer designs with a retro twist. Click to see more!</p>
-                    <a href="Design.html" class="button-2k bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-4 rounded-sm text-sm sm:text-base">
-                        View Designs &gt;&gt;
-                    </a>
-                </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div class="border-2 border-pink-500 rounded-md p-6 bg-white font-mono hover:bg-pink-50 transition-colors duration-200 cursor-pointer">
+        <img src="https://placehold.co/600x400/FF69B4/FFFFFF?text=Awesome+Poster+Design&font=impact" 
+             alt="Awesome Poster Design" 
+             class="rounded-md mb-4 border-2 border-pink-500 w-full h-auto object-cover" 
+             onerror="this.src='https://placehold.co/600x400/cccccc/000000?text=Image+Not+Found'">
+        <h4 class="text-2xl font-bold text-pink-600 mb-2 font-mono">Graphic Design Showcase</h4>
+        <p class="text-gray-700 mb-4 text-sm sm:text-base font-mono">
+          Eye-catching poster and flyer designs with a retro twist. Click to see more!
+        </p>
+        <a href="Design.html" class="inline-block bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-4 rounded-sm text-sm sm:text-base font-mono">
+          View Designs &gt;&gt;
+        </a>
+      </div>
 
-                <div class="card-2k rounded-lg shadow-xl p-6 transform hover:scale-105 transition-transform duration-300">
-                    <img src="https://placehold.co/600x400/00A36C/FFFFFF?text=Rad+Web+Project&font=tahoma" alt="Rad Web Project" class="rounded-md mb-4 border-2 border-teal-500 w-full h-auto object-cover" onerror="this.src='https://placehold.co/600x400/cccccc/000000?text=Image+Not+Found'">
-                    <h4 class="text-2xl font-bold text-teal-600 mb-2">Web Development Wizardry</h4>
-                    <p class="text-gray-700 mb-4 text-sm sm:text-base">Cutting-edge (for the 2000s) websites and interactive experiences. Explore my web creations!</p>
-                    <a href="Web-projects.html" class="button-2k bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-sm text-sm sm:text-base">
-                        Explore Web Projects &gt;&gt;
-                    </a>
-                </div>
+      <div class="border-2 border-teal-500 rounded-md p-6 bg-white font-mono hover:bg-teal-50 transition-colors duration-200 cursor-pointer">
+        <img src="https://placehold.co/600x400/00A36C/FFFFFF?text=Rad+Web+Project&font=tahoma" 
+             alt="Rad Web Project" 
+             class="rounded-md mb-4 border-2 border-teal-500 w-full h-auto object-cover" 
+             onerror="this.src='https://placehold.co/600x400/cccccc/000000?text=Image+Not+Found'">
+        <h4 class="text-2xl font-bold text-teal-600 mb-2 font-mono">Web Development Wizardry</h4>
+        <p class="text-gray-700 mb-4 text-sm sm:text-base font-mono">
+          Cutting-edge (for the 2000s) websites and interactive experiences. Explore my web creations!
+        </p>
+        <a href="Web-projects.html" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-sm text-sm sm:text-base font-mono">
+          Explore Web Projects &gt;&gt;
+        </a>
+      </div>
 
-                <div class="card-2k rounded-lg shadow-xl p-6 transform hover:scale-105 transition-transform duration-300">
-                    <img src="https://placehold.co/600x400/DC143C/FFFFFF?text=Epic+Video+Edits&font=courier" alt="Epic Video Edits" class="rounded-md mb-4 border-2 border-red-600 w-full h-auto object-cover" onerror="this.src='https://placehold.co/600x400/cccccc/000000?text=Image+Not+Found'">
-                    <h4 class="text-2xl font-bold text-red-700 mb-2">Video Editing Magic</h4>
-                    <p class="text-gray-700 mb-4 text-sm sm:text-base">Montages, highlight reels, and slideshows edited with classic flair. Check out the videos!</p>
-                    <a href="#" class="button-2k bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-sm text-sm sm:text-base">
-                        Watch Videos &gt;&gt;
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="border-2 border-red-600 rounded-md p-6 bg-white font-mono hover:bg-red-50 transition-colors duration-200 cursor-pointer">
+        <img src="https://placehold.co/600x400/DC143C/FFFFFF?text=Epic+Video+Edits&font=courier" 
+             alt="Epic Video Edits" 
+             class="rounded-md mb-4 border-2 border-red-600 w-full h-auto object-cover" 
+             onerror="this.src='https://placehold.co/600x400/cccccc/000000?text=Image+Not+Found'">
+        <h4 class="text-2xl font-bold text-red-700 mb-2 font-mono">Video Editing Magic</h4>
+        <p class="text-gray-700 mb-4 text-sm sm:text-base font-mono">
+          Montages, highlight reels, and slideshows edited with classic flair. Check out the videos!
+        </p>
+        <a href="#" class="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-sm text-sm sm:text-base font-mono">
+          Watch Videos &gt;&gt;
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     <div class="container mx-auto px-4">
          <hr class="hr-2k my-8 md:my-12">
     </div>
 
-    <section id="contact" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold text-blue-700 mb-8 text-shadow-2k">Get In Touch! (Via E-Mail)</h2>
-            <p class="text-lg text-gray-700 mb-6 max-w-xl mx-auto">
-                Got a question or want to hire me for your next Y2K bug fix? Send an electronic mail!
-            </p>
-            <a href="mailto:your.email@example.com" class="button-2k bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-md text-lg">
-                Compose E-Mail...
-            </a>
-            <p class="mt-8 text-sm text-gray-600">
-                (P.S. My guestbook is currently down for maintenance. Check back in 2003!)
-            </p>
-        </div>
-    </section>
 
-    <footer class="footer-2k text-white py-8 text-center">
-        <div class="container mx-auto px-4">
-            <p class="mb-4 text-sm sm:text-base">&copy; 2001 My Awesome Web Presence. All Rights Reserved (probably).</p>
-            <div class="flex flex-wrap justify-center items-center space-x-2 sm:space-x-4">
-                <a href="video.html" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-300 transition-colors text-sm sm:text-base">My_Youtube</a>
-                <span class="text-gray-500 hidden sm:inline">|</span>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-300 transition-colors text-sm sm:text-base">GITHUB</a>
-                <span class="text-gray-500 hidden sm:inline">|</span>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-300 transition-colors text-sm sm:text-base">TWITTER_LOL</a>
-                 <span class="text-gray-500 hidden sm:inline">|</span>
-                <a href="https://example.com/myspace" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-300 transition-colors text-sm sm:text-base">MY_SPACE (Archive)</a>
-            </div>
-            
-        </div>
-    </footer>
+
+    
+<footer class="bg-gray-100 border-t-2 border-gray-300 text-center py-4 mt-10 font-mono text-blue-900 text-sm">
+  &copy; 2000 - 2025 Jaber Ahmed. All rights reserved. | 
+  <a href="mailto:your@email.com" class="text-blue-900 hover:text-red-600 underline">Email Me</a>
+</footer>
+
+        
+    
 
 </body>
 </html>
